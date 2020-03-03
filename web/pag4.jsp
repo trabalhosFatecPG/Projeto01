@@ -1,6 +1,6 @@
 <%-- 
-    Document   : pag2
-    Created on : 03/03/2020, 16:29:06
+    Document   : pag4
+    Created on : 03/03/2020, 17:22:43
     Author     : Fernanda
 --%>
 
@@ -9,19 +9,14 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Amortização Constante</title>
+        <title>Tabela Price</title>
     </head>
     <body>
-         
-        <%@include file="WEB-INF/jspf/menu.jspf" %>
-    <center> <h1>Amortização Constante</h1></center>
-       
-       
-       
-<footer>
+         <%@include file="WEB-INF/jspf/menu.jspf" %>
+    <center> <h1>Tabela Price</h1></center>
+        <footer>
        
 <%@include file="WEB-INF/jspf/footer.jspf" %>
 </footer>
-
     </body>
 </html>

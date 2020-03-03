@@ -1,6 +1,6 @@
 <%-- 
-    Document   : pag2
-    Created on : 03/03/2020, 16:29:06
+    Document   : pag3
+    Created on : 03/03/2020, 17:22:04
     Author     : Fernanda
 --%>
 
@@ -9,19 +9,14 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Amortização Constante</title>
+        <title>Amortização Americana</title>
     </head>
     <body>
-         
-        <%@include file="WEB-INF/jspf/menu.jspf" %>
-    <center> <h1>Amortização Constante</h1></center>
-       
-       
-       
-<footer>
+         <%@include file="WEB-INF/jspf/menu.jspf" %>
+    <center><h1>Amortização Americana</h1></center>
+        <footer>
        
 <%@include file="WEB-INF/jspf/footer.jspf" %>
 </footer>
-
     </body>
 </html>

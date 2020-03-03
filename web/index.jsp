@@ -9,16 +9,15 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Home</title>
     </head>
     <body>
         <%@include file="WEB-INF/jspf/menu.jspf" %>
-        <h1>Oi sou o index</h1>
+    <center> <h1>Oi sou home</h1></center>
             
-<footer>
+    <footer> 
        
-<a href="index.jsp">Indice</a>
-<a href="pag2.jsp">Pagina 2</a>
+<%@include file="WEB-INF/jspf/footer.jspf" %>
 </footer>
     </body>
 

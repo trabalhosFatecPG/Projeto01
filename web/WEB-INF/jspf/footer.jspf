@@ -1,6 +1,8 @@
 <%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
 
-<a href="index.jsp">Indice</a>
-<a href="pag2.jsp">Pagina 2</a>
-<hr/>
+
+
+<p>Projeto 01 - Programação orientada a objetos</p>
+<p>Professor Ricardo Puppo</p>
+
