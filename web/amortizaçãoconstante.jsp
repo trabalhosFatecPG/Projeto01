@@ -4,6 +4,10 @@
     Author     : Marcos Paulo da Rocha Moura
 --%>
 
+
+
+
+<%--FORM--%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -44,6 +48,8 @@ Jurus: Taxa de Jurus
 Saldo Devedor: Quanto foi Pago - Quanto falta a ser pago.
 --%>
 
+
+<%--Tabela--%>
         <table border="1">
             <tr>
                 <th>Mês</th>
@@ -52,6 +58,8 @@ Saldo Devedor: Quanto foi Pago - Quanto falta a ser pago.
                 <th>Jurus</th>
                 <th>Saldo Devedor</th>              
             </tr>
+            
+<%--Gerar Tabela--%>
                 <%for(int i=1; i<=tempo; i++){%>
                 <tr>
                 <td><%=i%></td><%--Mês--%>
