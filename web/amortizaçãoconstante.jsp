@@ -7,7 +7,7 @@
 
 
 
-<%--FORM--%>
+<%--Inicio FORM--%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -35,7 +35,7 @@
                <br>
                <input type="submit" name="Calcular" value="Calcular"/>
             </form>
-               
+<%--Fim FORM--%>               
 <%--
 REGRA DE NEGÓCIO.
 Tabela de 5 setores (Mês, Parcela, Amortizações,Jurus,Saldo Devedor)
@@ -49,7 +49,7 @@ Saldo Devedor: Quanto foi Pago - Quanto falta a ser pago.
 --%>
 
 
-<%--Tabela--%>
+<%--Montar Tabela--%>
         <table border="1">
             <tr>
                 <th>Mês</th>
@@ -58,8 +58,9 @@ Saldo Devedor: Quanto foi Pago - Quanto falta a ser pago.
                 <th>Jurus</th>
                 <th>Saldo Devedor</th>              
             </tr>
-            
-<%--Gerar Tabela--%>
+<%--Montar Tabela--%>
+
+<%--Popular Tabela--%>
                 <%for(int i=1; i<=tempo; i++){%>
                 <tr>
                 <td><%=i%></td><%--Mês--%>
@@ -76,7 +77,8 @@ Saldo Devedor: Quanto foi Pago - Quanto falta a ser pago.
                 <%}else{%>
                     <td>total - (valor/tempo)+(taxa*(valor-???*(valor/tempo))</td><%--Saldo Devedor 2° mês em diante--%>
                 <%}%>      
-            </tr>         
+            </tr>
+<%--Parar de Popular Tabela--%>
         </table>        
     </body>
 </html>
