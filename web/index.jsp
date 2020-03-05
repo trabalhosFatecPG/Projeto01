@@ -9,16 +9,28 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
         <title>Home</title>
     </head>
     <body>
+    
+        <nav id="menu">
         <%@include file="WEB-INF/jspf/menu.jspf" %>
+        </nav>
+    
+        
+        
     <center> <h1>Oi sou home</h1></center>
-            
-    <footer> 
+       
+   
+     <footer>
        
 <%@include file="WEB-INF/jspf/footer.jspf" %>
 </footer>
+   
+       
+
+
     </body>
 
 </html>

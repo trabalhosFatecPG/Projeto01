@@ -12,8 +12,10 @@
         <title>Amortização Constante</title>
     </head>
     <body>
-         
+         <nav id="menu">
         <%@include file="WEB-INF/jspf/menu.jspf" %>
+        </nav> 
+       
     <center> <h1>Amortização Constante</h1></center>
        
        

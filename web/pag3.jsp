@@ -12,7 +12,9 @@
         <title>Amortização Americana</title>
     </head>
     <body>
-         <%@include file="WEB-INF/jspf/menu.jspf" %>
+          <nav id="menu">
+        <%@include file="WEB-INF/jspf/menu.jspf" %>
+        </nav>
     <center><h1>Amortização Americana</h1></center>
         <footer>
        

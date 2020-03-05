@@ -1,8 +1,30 @@
 <%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
-<a href="index.jsp">Home</a>
-<a href="pag2.jsp">Amortização Constante</a>
-<a href="pag3.jsp">Amortização Americana</a>
-<a href="pag4.jsp">Tabela Price</a>
+
+   
+    
+    <div id="menu" style="position:absolute; top:0px; left:0px;  right:0px;overflow:hidden;  text-align:center;
+    list-style:none;
+	float: right;
+	margin-left: 2.7em;
+	margin-top: 1.2em;
+	margin-right: -2.8em;	display: inline-block;
+	font-weight: bolder;
+    font-size: 1.5em;	font-family: times new roman;
+    padding: 1.0em 1.0em;
+    display: inline-block;
+    color: #c84b3a;
+    text-decoration: none;
+	font-weight: bolder;">  
+  
+        <a href="index.jsp">Home</a>
+        <a href="pag2.jsp">Amortização Constante</a>
+        <a href="pag3.jsp">Amortização Americana</a>
+        <a href="pag4.jsp">Tabela Price</a>
+    
+    </div>
+
+
+
 
 

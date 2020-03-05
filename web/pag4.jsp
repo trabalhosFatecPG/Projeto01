@@ -12,7 +12,9 @@
         <title>Tabela Price</title>
     </head>
     <body>
-         <%@include file="WEB-INF/jspf/menu.jspf" %>
+          <nav id="menu">
+        <%@include file="WEB-INF/jspf/menu.jspf" %>
+        </nav>
     <center> <h1>Tabela Price</h1></center>
         <footer>
        
