@@ -9,6 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="estilos/principal.css" rel="stylesheet" type="text/css">
         
         <title>Home</title>
     </head>

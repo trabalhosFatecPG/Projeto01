@@ -8,12 +8,12 @@ and open the template in the editor.
     Author     : Fernanda
 */
 
-#menu {
+menu {
 	width: 68%;
 }
 
 
-#menu ul {
+menu ul {
     text-align:center;
     list-style:none;
 	float: right;
@@ -22,13 +22,13 @@ and open the template in the editor.
 	margin-right: -2.8em;
 }
 
-#menu ul li {
+menu ul li {
 	display: inline-block;
 	font-weight: bolder;
     font-size: 1.5em;
 }
 
-#menu ul li a {
+menu ul li a {
 	font-family: times new roman;
     padding: 1.0em 1.0em;
     display: inline-block;
