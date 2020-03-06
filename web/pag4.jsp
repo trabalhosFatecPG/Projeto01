@@ -16,6 +16,16 @@
         <%@include file="WEB-INF/jspf/menu.jspf" %>
         </nav>
     <center> <h1>Tabela Price</h1></center>
+    <form action =" pag4.jsp">
+        <p>Valor Financiado: </p>
+        <input type="number" name="valorFinanciado"/>
+        <p>Taxa de juros: </p>
+        <input type="number" name="taxaJuros"/>
+        <p>Número de prestações: </p>
+        <input type="number" name="prestacoes"/>
+        <input type="submit" name="calcular" value="Calcular"/>
+    </form>
+    
         <footer>
        
 <%@include file="WEB-INF/jspf/footer.jspf" %>
