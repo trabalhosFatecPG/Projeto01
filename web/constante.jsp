@@ -1,5 +1,4 @@
 <%-- 
-<<<<<<< HEAD
     Document   : amortizaçãoconstante.jsp
     Created on : 03/03/2020, 15:57:38
     Author     : Marcos Paulo da Rocha Moura
@@ -22,7 +21,6 @@
         Popular a tabela com laço de repetição.
 --%>
 
-<%--Inicio FORM--%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -31,8 +29,14 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Amortização Constante</title>
     </head>
-    <body>    
-        <h1>Amortização Constante</h1>               
+    <body>  
+        <nav id="menu">
+        <%@include file="WEB-INF/jspf/menu.jspf" %>
+        </nav> 
+        
+        <h1>Amortização Constante</h1></center>  
+    
+<%--Inicio FORM--%>
             <form>
                Indique o valor financiado:<br>               
                <input type="number" name="montante"/><br><br>    
@@ -85,10 +89,21 @@ MAIS IMPORTANTE AINDA
                 <%if(tempo<2){%>   
                     <td><=%total - ((valor/tempo)+(taxa*valor))%></td> <%--Saldo Devedor 1° mês
                 <%}else{%>
-                    <td>total - (valor/tempo)+(taxa*(valor-i-1)*(valor/tempo))</td> <%--Saldo Devedor 2° mês em diante
+                    <td>total - (valor/tempo)+(taxa*(valor-???*(valor/tempo))</td> <%--Saldo Devedor 2° mês em diante
                 <%}%>      
             </tr>
 --%>                       
 <%--Fim Popular Tabela--%>
-        </table>        
+        </table>   
+        <footer>
+            <%@include file="WEB-INF/jspf/footer.jspf" %>
+        </footer>
     </body>
+</html>
+
+      
+       
+
+
+    </body>
+</html>
