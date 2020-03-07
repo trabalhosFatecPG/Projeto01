@@ -18,11 +18,12 @@
     <center> <h1>Tabela Price</h1></center>
     <form action =" pag4.jsp">
         <p>Valor Financiado: </p>
-        <input type="number" name="valorFinanciado"/>
+        <input type="number" name="emprestimo"/>
+      
         <p>Taxa de juros: </p>
-        <input type="number" name="taxaJuros"/>
+        <input type="number" name="taxa"/>
         <p>Número de prestações: </p>
-        <input type="number" name="prestacoes"/>
+        <input type="number" name="tempo"/>
         <input type="submit" name="calcular" value="Calcular"/>
     </form>
     
