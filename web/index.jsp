@@ -2,11 +2,9 @@
     Document   : amortizaçãoconstante.jsp
     Created on : 03/03/2020, 15:57:38
     Author     : Marcos Paulo da Rocha Moura
-
     REGRA DE NEGÓCIO:
         O usuario deve entrar com 3 valores (Valor Financiado, Total das Parcelas e Jurus)
     e deve sair na mesma pagina uma tabela.
-
     CALCULO:
         Tabela de 5 setores (Mês, Parcela, Amortizações,Jurus,Saldo Devedor).
         Mês: Mês da Percela.
@@ -16,7 +14,6 @@
         Amortizações = (valor/tempo).
         Jurus: Taxa de Jurus.
         Saldo Devedor: Quanto foi Pago - Quanto falta a ser pago.
-
     ESTRUTURA:
         3 campos para digitar dados.
         1 Botão Para envio do dados.
@@ -65,7 +62,6 @@ Inicio Popular Tabela
 
 <%--
 IMPORTANTE
-
 double valor = Double.parseDouble(request.getParameter("montante"));
 double total = Double.parseDouble(request.getParameter("montante"));          
 double tempo = Double.parseDouble(request.getParameter("tempo"));
@@ -75,7 +71,6 @@ double taxa = Double.parseDouble(request.getParameter("jurus"));
 
 <%--
 MAIS IMPORTANTE AINDA
-
             <%for(int i=1; i<=tempo; i++){%>
             <tr>
                 <td><%=i%></td> <%--Mês
@@ -89,7 +84,7 @@ MAIS IMPORTANTE AINDA
                 <%if(tempo<2){%>   
                     <td><=%total - ((valor/tempo)+(taxa*valor))%></td> <%--Saldo Devedor 1° mês
                 <%}else{%>
-                    <td>total - (valor/tempo)+(taxa*(valor-???*(valor/tempo))</td> <%--Saldo Devedor 2° mês em diante
+                    <td>total - (valor/tempo)+(taxa*(valor-i-1)*(valor/tempo))</td> <%--Saldo Devedor 2° mês em diante
                 <%}%>      
             </tr>
 --%>                       
@@ -97,5 +92,3 @@ MAIS IMPORTANTE AINDA
         </table>        
     </body>
 </html>
-
-      
