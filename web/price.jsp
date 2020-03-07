@@ -9,6 +9,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+ 
         <title>Tabela Price</title>
     </head>
     <body>
@@ -16,17 +18,16 @@
         <%@include file="WEB-INF/jspf/menu.jspf" %>
         </nav>
     <center> <h1>Tabela Price</h1></center>
-    <form action =" pag4.jsp">
+    <form action =" price.jsp">
         <p>Valor Financiado: </p>
-        <input type="number" name="emprestimo"/>
-      
+        <input type="number" name="emprestimo"/>     
         <p>Taxa de juros: </p>
-        <input type="number" name="taxa"/>
+        <input type="number" name="taxa"/>      
         <p>Número de prestações: </p>
-        <input type="number" name="tempo"/>
+        <input type="number" name="tempo"/>            
         <input type="submit" name="calcular" value="Calcular"/>
     </form>
-    
+
         <footer>
        
 <%@include file="WEB-INF/jspf/footer.jspf" %>
