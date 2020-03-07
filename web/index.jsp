@@ -21,7 +21,7 @@
         
         
     <center> <h1>Oi sou home</h1></center>
-        <center> <h2>Tabela Price</h2></center>
+                <center> <h2>Tabela Price</h2></center>
     <form action =" price.jsp">
         <p>Valor Financiado: </p>
         <input type="number" name="emprestimo"/>     

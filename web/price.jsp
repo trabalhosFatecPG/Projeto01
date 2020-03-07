@@ -17,17 +17,38 @@
           <nav id="menu">
         <%@include file="WEB-INF/jspf/menu.jspf" %>
         </nav>
-<% 
-double emprestimo = Double.parseDouble(request.getParameter("emprestimo"));
-double taxa = Double.parseDouble(request.getParameter("taxa"));
-double tempo = Double.parseDouble(request.getParameter("tempo"));
-double p;
+        <p>
+<%double emprestimo = Double.parseDouble(request.getParameter("emprestimo"));%>
+<%double taxa = Double.parseDouble(request.getParameter("taxa"));%>
+<%double tempo = Double.parseDouble(request.getParameter("tempo"));%>
 
-taxa = taxa / 100;
-p = (emprestimo * taxa) / (1 -(1 / Math.pow((1 + taxa) , tempo)));
-out.println(p);
 
-%>
+<%taxa = taxa / 100;%>
+<%double p= (emprestimo * taxa) / (1 -(1 / Math.pow((1 + taxa) , tempo)));%>
+<%out.println("valor parcela: "+ p);%>
+<%double K = p / emprestimo;
+			 taxa = 0.00001;
+                         double CT = 0;
+			 if (K>CT)
+			 {
+			   while (K > CT)
+			   { 
+				   taxa = taxa + 0.00001;
+				   CT = (taxa * Math.pow((1 + taxa),tempo)) / (Math.pow((1 + taxa),tempo)-1);				 
+               }
+             }
+			 else
+			  {
+                  while (CT > K)
+			   { 
+				  taxa = taxa + 0.00001;
+				   CT = (taxa * Math.pow((1 + taxa),tempo)) / (Math.pow((1 + taxa),tempo)-1); 
+               }
+			  }
+			   taxa = taxa * 100;
+out.println(CT);%>
+
+        </p>
 
         <footer>
        
