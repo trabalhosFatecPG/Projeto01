@@ -21,6 +21,16 @@
         
         
     <center> <h1>Oi sou home</h1></center>
+        <center> <h2>Tabela Price</h2></center>
+    <form action =" price.jsp">
+        <p>Valor Financiado: </p>
+        <input type="number" name="emprestimo"/>     
+        <p>Taxa de juros: </p>
+        <input type="number" name="taxa"/>      
+        <p>Número de prestações: </p>
+        <input type="number" name="tempo"/>            
+        <input type="submit" name="calcular" value="Calcular"/>
+    </form>
        
    
      <footer>

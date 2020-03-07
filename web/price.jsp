@@ -17,16 +17,17 @@
           <nav id="menu">
         <%@include file="WEB-INF/jspf/menu.jspf" %>
         </nav>
-    <center> <h1>Tabela Price</h1></center>
-    <form action =" price.jsp">
-        <p>Valor Financiado: </p>
-        <input type="number" name="emprestimo"/>     
-        <p>Taxa de juros: </p>
-        <input type="number" name="taxa"/>      
-        <p>Número de prestações: </p>
-        <input type="number" name="tempo"/>            
-        <input type="submit" name="calcular" value="Calcular"/>
-    </form>
+<% 
+double emprestimo = Double.parseDouble(request.getParameter("emprestimo"));
+double taxa = Double.parseDouble(request.getParameter("taxa"));
+double tempo = Double.parseDouble(request.getParameter("tempo"));
+double p;
+
+taxa = taxa / 100;
+p = (emprestimo * taxa) / (1 -(1 / Math.pow((1 + taxa) , tempo)));
+out.println(p);
+
+%>
 
         <footer>
        
