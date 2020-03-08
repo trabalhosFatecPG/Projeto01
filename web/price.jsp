@@ -74,6 +74,7 @@
                     <br>
                 </div>
                 <%-- Include do rodapé --%>
+                
                 <footer>
 
                     <%@include file="WEB-INF/jspf/footer.jspf" %>
