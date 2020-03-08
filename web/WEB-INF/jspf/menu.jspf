@@ -4,8 +4,8 @@
 <nav id="menu" class="menu">
     <ul>
 	    <li><a href="index.jsp">Home</a></li>
-        <li><a href="constante.jsp">Amortização Constante</a></li>
-        <li><a href="americana.jsp">Amortização Americana</a></li>
-        <li><a href="price.jsp">Tabela Price</a></li>		 
+        <li><a href="amortizacao-constante.jsp">Amortização Constante</a></li>
+        <li><a href="amortizacao-americana.jsp">Amortização Americana</a></li>
+        <li><a href="tabela-price.jsp">Tabela Price</a></li>		 
     </ul>
 </nav>
