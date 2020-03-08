@@ -1,7 +1,7 @@
 <%-- 
     Document   : index
     Created on : 03/03/2020, 11:03:02
-    Author     : Fernanda
+    Author     : Marcos Paulo da Rocha Moura Miúdo
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -20,10 +20,13 @@
     
         
         
-    <center> <h1>Oi sou home</h1></center>
-     
-       
-   
+    <center><h1><strong>Projeto 001 - Calculo de Amortizações</strong></h1></center>
+    <br>
+    <br>
+    <br>
+    <center> <h2>Jane Fernanda - Desing, Tabela Price e Amortização Americana.</h2></center>
+    <center> <h2>Marcos Paulo da Rocha Moura Miúdo - Amortização Constante e Amortização Americana.</h2></center>
+
      <footer>
        
 <%@include file="WEB-INF/jspf/footer.jspf" %>
