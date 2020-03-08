@@ -10,31 +10,20 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="C:\Users\Fernanda\Documents\NetBeansProjects\Projeto01\web\Principal.css" rel="stylesheet" type="text/css">
-        
         <title>Home</title>
     </head>
+    
     <body>
         <nav id="menu">
         <%@include file="WEB-INF/jspf/menu.jspf" %>
         </nav>
-    
-        
-        
-    <center><h1><strong>Projeto 001 - Calculo de Amortizações</strong></h1></center>
-    <br>
-    <br>
-    <br>
-    <center> <h2>Jane Fernanda - Desing, Tabela Price e Amortização Americana.</h2></center>
-    <center> <h2>Marcos Paulo da Rocha Moura Miúdo - Amortização Constante e Amortização Americana.</h2></center>
-
-     <footer>
-       
-<%@include file="WEB-INF/jspf/footer.jspf" %>
-</footer>
-   
-       
-
-
+        <center><h1><strong>Projeto 001 - Calculo de Amortizações</strong></h1></center>
+        <br><br><br>
+        <center> <h3>Jane Fernanda - Desing, Tabela Price e Amortização Americana.</h3></center>
+        <center> <h3>Marcos Paulo da Rocha Moura Miúdo - Amortização Constante e Amortização Americana.</h3></center>
+        <footer>      
+            <%@include file="WEB-INF/jspf/footer.jspf" %>
+        </footer>
     </body>
 
 </html>
