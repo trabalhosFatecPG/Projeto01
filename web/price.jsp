@@ -11,8 +11,6 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-
-
         <title>Tabela Price</title>
         <%
             double pmt = 0;
@@ -28,7 +26,7 @@
 
         <div align="center">
             <h1>Tabela Price</h1><br>
-            <div class="panel panel-default"><br>
+            <div ><br>
                 <form>
                     <label>Valor Empréstimo:</label><br>
                     <input type="text" name="PV"/><br>
@@ -38,8 +36,8 @@
                     <input type="text" name="n"/></br>
                     <br />
 
-                    <input class="btn btn primary" type="submit" value="Enviar" />
-                    <input class="btn btn primary" type="submit" value="Cancelar" />
+                    <input  type="submit" value="Enviar" />
+                    <input  type="submit" value="Cancelar" />
 
                 </form>
                 <br>
@@ -50,8 +48,8 @@
                     double PV = Double.parseDouble(request.getParameter("PV"));
                     double i = Double.parseDouble(request.getParameter("i")) / 100;
                     int n = Integer.parseInt(request.getParameter("n")); %>
-                <div class="container">
-                    <table class="table table-bordered">
+                <div>
+                    <table>
                         <tr><th colspan="1">Periodo (Meses)</th><th>Saldo(R$)</th><th>Parcela(R$)</th><th>Juros(R$)</th><th>Prestação(R$)</th></tr>
                                 <%
                                     val = PV;
