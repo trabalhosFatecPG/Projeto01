@@ -49,7 +49,7 @@
                     double i = Double.parseDouble(request.getParameter("i")) / 100;
                     int n = Integer.parseInt(request.getParameter("n")); %>
                 <div>
-                    <table>
+                    <table border = 1>
                         <tr><th colspan="1">Periodo (Meses)</th><th>Saldo(R$)</th><th>Parcela(R$)</th><th>Juros(R$)</th><th>Prestação(R$)</th></tr>
                                 <%
                                     val = PV;
