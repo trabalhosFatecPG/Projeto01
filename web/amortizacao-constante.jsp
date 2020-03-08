@@ -60,8 +60,9 @@
             double taxa = Double.parseDouble(request.getParameter("juros"));
 
             double parcela;
-            double totalp;
-            double totalj;
+            double totalparcela = 0;
+            double totalamortizacao = 0;
+            double totaljuros = 0;
             DecimalFormat df = new DecimalFormat("#,##0.00");
             %>                                     
             <%--Construindo Tabela--%>
@@ -74,31 +75,42 @@
                 <th>Saldo Devedor</th>              
                 </tr>
 
-                <%--Populando Tabela
-                
-                amortizacao + ((taxa*(valor-(i-1)*amortizacao))/100)
-                
-                --%>
+                <%--Populando Tabela              --%>
                 
                 
-                <%for(int i=1; i<=(tempo); i++){
-                    double amortizacao = valor/tempo; //Amortizações
-                    double juros =taxa*saldodevedor/100;//Juros        
-                    
-                    if (i==1){
-                        parcela = amortizacao+((taxa*valor)/100);//1° Mês da parcela}
-                    }else{
-                        parcela = amortizacao+((taxa*(valor-(i-1)*amortizacao))/100); //2° Mês da parcela
-                    } 
-                    saldodevedor = saldodevedor - amortizacao; //Saldo Devedor
-                    %>
-                    <tr>
-                    <td><%=i%></td> <%--Mês--%>   
-                    <td><%=df.format((parcela))%></td>
-                    <td><%=df.format(amortizacao)%></td>
-                    <td><%=df.format(juros)%></td>
-                    <td><%=df.format(saldodevedor)%></td>
+                <%for(int i=1; i<=(tempo+1); i++){
+                    if (tempo >= i){
+
+                        double amortizacao = valor/tempo; //Amortizações
+                        double juros = taxa*saldodevedor/100;//Juros        
+
+                        if (i==1){
+                            parcela = amortizacao+((taxa*valor)/100);//1° Mês da parcela}
+                        }else{
+                            parcela = amortizacao+((taxa*(valor-(i-1)*amortizacao))/100); //2° Mês da parcela
+                        } 
+                        saldodevedor = saldodevedor - amortizacao; //Saldo Devedor
+                        totalparcela = totalparcela + parcela;
+                        totalamortizacao = totalamortizacao + amortizacao;
+                        totaljuros = totaljuros+juros;
+                
+                        %>
+                        <tr>
+                        <td><%=i%></td> <%--Mês--%>   
+                        <td><%=df.format((parcela))%></td>
+                        <td><%=df.format(amortizacao)%></td>
+                        <td><%=df.format(juros)%></td>
+                        <td><%=df.format(saldodevedor)%></td>
+                    <%}else{%>
+                        <tr>
+                            <td>>></td>  
+                            <td><%=df.format(totalparcela)%></td>
+                            <td><%=df.format(totalamortizacao)%></td>
+                            <td><%=df.format(totaljuros)%></td>
+                            <td><<-TOTAL</td>
+                        
                     <%}%>
+                <%}%>
                 </tr>
             </table>  
         <%} catch (Exception ex) {%>
