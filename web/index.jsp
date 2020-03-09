@@ -19,8 +19,13 @@
         </nav>
         <center><h1><strong>Projeto 001 - Calculo de Amortizações</strong></h1></center>
         <br><br><br>
-        <center> <h3>Jane Fernanda - Desing, Tabela Price e Amortização Americana.</h3></center>
-        <center> <h3>Marcos Paulo da Rocha Moura Miúdo - Amortização Constante e Amortização Americana.</h3></center>
+        
+        
+        <center> <h3>A aplicação é capaz de gerar uma tabela de Amortização Constante, tabela de amortização Americana ou uma Trabela Price por vez. Funciona através de formulário e as tabelas são geradas na própria pagina.</h3></center>
+        <hr>
+        <center> <h4>Integrantes:</h4></center>
+        <center> <h4>Jane Fernanda - Desing, Tabela Price e Amortização Americana.</h4></center>
+        <center> <h4>Marcos Paulo da Rocha Moura Miúdo - Home e Amortização Constante.</h4></center>
         <footer>      
             <%@include file="WEB-INF/jspf/footer.jspf" %>
         </footer>
