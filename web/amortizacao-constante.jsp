@@ -118,5 +118,9 @@
         <%}%>
         <br>          
     </div>
+        <footer>      
+            <%@include file="WEB-INF/jspf/footer.jspf" %>
+        </footer>
     </body>
+
 </body>
