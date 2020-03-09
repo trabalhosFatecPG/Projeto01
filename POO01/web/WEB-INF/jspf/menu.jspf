@@ -1,0 +1,11 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+
+<nav id="menu" class="menu">
+    <ul>
+	    <li><a href="index.jsp">Home</a></li>
+        <li><a href="constante.jsp">Amortização Constante</a></li>
+        <li><a href="americana.jsp">Amortização Americana</a></li>
+        <li><a href="price.jsp">Tabela Price</a></li>		 
+    </ul>
+</nav>
